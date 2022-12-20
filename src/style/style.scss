@@ -1,0 +1,8 @@
+@charset "utf-8";
+@import 'reset.css';
+
+@mixin fontDefault($fontWeight) {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: $fontWeight;
+}
+

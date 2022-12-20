@@ -1,0 +1,124 @@
+#app {
+  overflow: scroll;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+.movie-container {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 672px;
+  margin: 0 auto;
+}
+.movie-container .movie {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-left: 64px;
+}
+.movie-container .movie .poster-container {
+  position: absolute;
+  left: -64px;
+  width: 281px;
+  height: 396px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.content {
+  width: 608px;
+  height: 500px;
+  background-color: #333;
+  border-radius: 15px;
+  color: #fff;
+  padding: 64px 0 0 266px;
+  box-sizing: border-box;
+}
+.content .content-type span {
+  color: #BDBDBD;
+}
+.content .content-type span + span::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 13px;
+  background-color: #bdbdbd;
+  margin: 0 7px -1px 3px;
+}
+.content .content-title {
+  margin: 13px 0 114px 0;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 46px;
+}
+.content .content-favorite {
+  display: flex;
+  margin: 0 0 22px 0;
+}
+.content .content-favorite button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  margin-right: 20px;
+}
+.content .content-favorite .button-recommend .icon_thumbs-up {
+  overflow: hidden;
+  text-indent: -9999px;
+  width: 29px;
+  height: 29px;
+  background: center/contain url("../images/thumbsup.png") no-repeat;
+}
+.content .content-favorite .button-recommend.on {
+  background-color: #2f80ed;
+}
+.content .content-favorite .button-recommend.on .icon_thumbs-up {
+  overflow: hidden;
+  text-indent: -9999px;
+  width: 29px;
+  height: 29px;
+  background: center/contain url("../images/thumbsup_2.png") no-repeat;
+}
+.content .content-favorite .button-heart .icon_heart {
+  overflow: hidden;
+  text-indent: -9999px;
+  width: 29px;
+  height: 29px;
+  background: center/contain url("/src/images/heart.png") no-repeat;
+}
+.content .content-favorite .button-heart.on {
+  background-color: #eb5757;
+}
+.content .content-favorite .button-heart.on .icon_heart {
+  overflow: hidden;
+  text-indent: -9999px;
+  width: 29px;
+  height: 29px;
+  background: center/contain url("../images/heart_2.png") no-repeat;
+}
+.content .star-average {
+  display: block;
+  margin-bottom: 16px;
+}
+.content .star-point-container {
+  display: flex;
+  align-items: center;
+}
+.content .star-point-container .star-background {
+  display: flex;
+}
+.content .star-point-container .star-background img {
+  width: 51px;
+}
+.content .star-point-container .icon-remove-star {
+  width: 22px;
+  height: 22px;
+  margin-left: 11px;
+}/*# sourceMappingURL=app.css.map */
